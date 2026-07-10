@@ -1,0 +1,24 @@
+# Project Shree Ram
+
+> NOTE: This site is currently a placeholder (the repository has no site content
+> yet). This llms.txt describes the intended mission so AI crawlers and the
+> sibling sites have context; it will be expanded once site content is added.
+
+> Project Shree Ram is intended to focus on Hindu–Jewish relations and the
+> broader India–Israel relationship — cultural, religious, and civilizational
+> dialogue between the two communities and nations.
+
+## About (intended)
+
+- Focus: Hindu–Jewish dialogue and India–Israel relations (people-to-people, cultural, and diplomatic).
+- Status: placeholder — no live content or forms yet.
+
+## Related initiatives
+
+Project Shree Ram is one of six independent sibling nonprofit sites:
+
+- [get-out-now.org](https://get-out-now.org/) — diaspora relocation / Law of Return guidance.
+- [interfaith-sanctuary.org](https://interfaith-sanctuary.org/) — a non-denominational interfaith sanctuary.
+- [thelastdate.org](https://thelastdate.org/) — nonprofit matchmaking initiative.
+- [1in56million.org](https://1in56million.org/) — British-Israelite / genealogy research.
+- [crypto-jews.org](https://crypto-jews.org/) — Anusim / Converso community and Sephardic genealogy.
