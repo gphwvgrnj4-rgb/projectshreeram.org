@@ -243,3 +243,12 @@ footer.site::before{background-image:url('/assets/img/pattern-light.svg'); opaci
   .hero .logo-mark,.hero .logo-mark svg,.flag-chip,.js .hero .tagline,.js .hero h1,.js .hero .lead,.js .hero .cta-btn,.js .hero .flags-row{animation:none !important; opacity:1 !important;}
   .cta-btn:hover,form.interest button:hover{transform:none;}
 }
+
+/* related-sites network band */
+.network{background:var(--cream-2); border-top:1px solid var(--line); padding:2.6rem 1.5rem;}
+.network .wrap{max-width:var(--maxw); margin:0 auto; text-align:center;}
+.network h2{font-family:'Mukta',sans-serif; text-transform:uppercase; letter-spacing:.1em; font-size:.9rem; color:var(--indigo-deep); margin:0 0 1.1rem;}
+.network-links{display:flex; flex-wrap:wrap; justify-content:center; gap:.6rem 1.4rem;}
+.network-links a{color:var(--saffron-deep); font-weight:700; text-decoration:none; font-size:.98rem;}
+.network-links a:hover{text-decoration:underline;}
+[dir="rtl"] .network h2,[lang="hi"] .network h2{letter-spacing:0;}
