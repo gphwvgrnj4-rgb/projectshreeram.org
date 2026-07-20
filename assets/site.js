@@ -50,6 +50,8 @@
         el.hidden = (mode !== 'roman');
       });
       st.querySelectorAll('button').forEach(function (x) { x.classList.toggle('active', x === b); });
+      // reveal any scroll-animated elements inside the now-visible script block
+      document.querySelectorAll('.reveal, .stagger').forEach(function (el) { el.classList.add('in'); });
     });
   }
 
