@@ -158,6 +158,18 @@ form.interest button[type=submit]:hover{background:var(--indigo-deep); transform
 .breadcrumb{font-family:'Mukta',sans-serif; font-size:.74rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); margin-bottom:.8rem;}
 .breadcrumb a{color:var(--saffron-deep); text-decoration:none;}
 
+/* ---------- FAQ accordion ---------- */
+.faq-list{margin-top:1.2rem;}
+.faq-item{background:#fff; border:1px solid var(--line); border-radius:8px; margin-bottom:.7rem; overflow:hidden;}
+.faq-item summary{cursor:pointer; list-style:none; padding:1rem 1.2rem; font-family:'Marcellus',serif; font-size:1.05rem; color:var(--indigo-deep); position:relative; padding-inline-end:2.4rem;}
+[dir="rtl"] .faq-item summary{font-family:'Frank Ruhl Libre',serif;}
+.faq-item summary::-webkit-details-marker{display:none;}
+.faq-item summary::after{content:"+"; position:absolute; inset-inline-end:1.1rem; top:50%; transform:translateY(-50%); font-size:1.4rem; color:var(--saffron-deep); transition:transform .2s;}
+.faq-item[open] summary::after{content:"\2013";}
+.faq-item summary:hover{background:var(--cream-2);}
+.faq-a{padding:0 1.2rem 1.15rem; color:var(--ink-soft); font-size:1.02rem;}
+.faq-a a{color:var(--indigo); font-weight:600;}
+
 /* ---------- FOOTER ---------- */
 footer.site{background:var(--indigo-deep); color:var(--cream); padding:2.4rem 1.5rem 2rem; border-top:3px solid var(--saffron);}
 footer.site .wrap{max-width:var(--maxw); display:flex; flex-direction:column; gap:1rem; align-items:center; text-align:center;}

@@ -1,0 +1,2 @@
+# strip .html for clean canonical URLs
+/*.html   /:splat   301!
