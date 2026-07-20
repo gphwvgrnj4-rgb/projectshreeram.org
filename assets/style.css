@@ -179,14 +179,23 @@ footer.site .foot-links a:hover{color:#fff; text-decoration:underline;}
 footer.site .fine{font-size:.8rem; color:#c7cbdb; max-width:640px; line-height:1.6;}
 footer.site .disclaimer{font-size:.78rem; color:#aab0c6; max-width:680px; border-top:1px solid rgba(233,206,143,.25); padding-top:1rem;}
 
-/* ---------- SYMBOL BACKGROUND (Hindu + Jewish motifs) ---------- */
+/* keep off-viewport reveal transforms from creating horizontal overflow (RTL stripe) */
+main{overflow-x:hidden;}
+
+/* ---------- SYMBOL BACKGROUND (Hindu + Jewish motifs) — slow drift ---------- */
 .hero, section, footer.site{position:relative;}
 .hero::before, section:nth-of-type(even)::before, footer.site::before{
   content:""; position:absolute; inset:0; z-index:0; pointer-events:none;
-  background-image:url('/assets/img/pattern.svg'); background-size:170px 170px; background-position:center; opacity:.06;}
-.hero::before{opacity:.08;}
-footer.site::before{background-image:url('/assets/img/pattern-light.svg'); opacity:.09;}
+  background-image:url('/assets/img/pattern.svg'); background-size:170px 170px; background-position:0 0; opacity:.06;
+  animation:bgdrift 70s linear infinite;}
+.hero::before{opacity:.08; animation-duration:90s;}
+section:nth-of-type(4n)::before{animation-direction:reverse; animation-duration:85s;}
+footer.site::before{background-image:url('/assets/img/pattern-light.svg'); opacity:.09; animation-duration:100s;}
 .hero > *, section > *, footer.site > *{position:relative; z-index:1;}
+@keyframes bgdrift{from{background-position:0 0;} to{background-position:170px 340px;}}
+@media (prefers-reduced-motion:reduce){
+  .hero::before, section::before, footer.site::before{animation:none !important;}
+}
 
 /* ---------- LOGO / EMBLEM ANIMATION ---------- */
 .hero .logo-mark{animation:emblemIn 1s cubic-bezier(.16,.8,.24,1) both;}
