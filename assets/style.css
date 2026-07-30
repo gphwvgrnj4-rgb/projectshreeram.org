@@ -129,6 +129,8 @@ section:nth-of-type(even){background:var(--cream-2);}
 /* ---------- QUOTE FEATURE ---------- */
 .quote-feature{text-align:center; padding:1rem 0 0;}
 .quote-feature .qphoto{width:100%; max-width:560px; margin:0 auto 1rem; border-radius:8px; border:1px solid var(--line); box-shadow:0 10px 26px rgba(21,38,87,.16);}
+.quote-feature .qvideo{width:100%; max-width:640px; margin:0 auto 1rem; aspect-ratio:16/9; border-radius:8px; overflow:hidden; border:1px solid var(--line); box-shadow:0 10px 26px rgba(21,38,87,.16);}
+.quote-feature .qvideo iframe{width:100%; height:100%; border:0; display:block;}
 .qcredit{font-size:.76rem; color:var(--muted); margin:0 0 1rem;}
 .qcredit a{color:var(--muted);}
 .qtext{font-family:'Marcellus',serif; font-size:1.28rem; line-height:1.5; color:var(--indigo-deep); max-width:600px; margin:0 auto .6rem;}
