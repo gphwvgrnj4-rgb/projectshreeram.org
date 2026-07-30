@@ -147,7 +147,7 @@ form.interest textarea{min-height:90px; resize:vertical;}
 form.interest button[type=submit]{margin-top:1.2rem; background:var(--indigo); color:#fff; border:1px solid var(--indigo-deep); font-family:'Mukta',sans-serif; font-weight:700; letter-spacing:.03em; padding:.85rem 1.8rem; border-radius:6px; font-size:.95rem; cursor:pointer; transition:background .15s,transform .15s;}
 form.interest button[type=submit]:hover{background:var(--indigo-deep); transform:translateY(-1px);}
 .form-note{font-size:.82rem; color:var(--muted); margin-top:.9rem;}
-.ta-tabs{display:flex; margin:1.4rem 0 0; border-radius:8px; overflow:hidden; max-width:520px; box-shadow:0 4px 14px rgba(42,32,22,.06);}
+.ta-tabs{display:flex; margin:1.4rem auto 0; border-radius:8px; overflow:hidden; width:100%; box-shadow:0 4px 14px rgba(42,32,22,.06);}
 .ta-tab{flex:1; padding:.85rem 1rem; border:1px solid var(--line); background:#fff; color:var(--ink); font-family:'Mukta',sans-serif; font-weight:700; font-size:.9rem; letter-spacing:.02em; cursor:pointer; transition:background .15s,color .15s;}
 .ta-tab+.ta-tab{border-left:0;}
 [dir="rtl"] .ta-tab+.ta-tab{border-left:1px solid var(--line); border-right:0;}
