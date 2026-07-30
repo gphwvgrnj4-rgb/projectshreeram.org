@@ -96,38 +96,88 @@
   </div>
 </section>
 
-<section class="reveal" data-rv="right" id="petition-he">
+<section class="reveal" data-rv="right" id="take-action">
   <p class="eyebrow">קחו פעולה</p>
-  <h2 class="display">חתמו על העצומה</h2>
-  <p>אנו אוספים חתימות מאזרחי הודו וישראל הקוראות לשתי הממשלות להאיץ באופן משמעותי את הערוצים החוקיים שתוארו לעיל, מתוך יעד לקליטת מיליון אזרחים הינדים בישראל. אנו מאמינים שצעד זה יחזק את הביטחון והחוסן הדמוגרפי של ישראל, ויעמיק ידידות המושתתת על ערכים משותפים -- צעד שלדעתנו מועיל לשתי האומות.</p>
-  <div class="card">
-    <h3>עצומה לממשלות הודו וישראל</h3>
-    <p>אנו, החתומים מטה, אזרחי הודו וישראל, קוראים לממשלותינו:</p>
-    <ul class="link-list">
-      <li>להרחיב ולייעל את ערוצי העבודה והמגורים הדו-צדדיים הקיימים בין הודו לישראל</li>
-      <li>לקבוע יעד משותף לטווח קרוב של קליטת מיליון אזרחים הינדים בישראל דרך ערוצים חוקיים ווולונטריים בלבד</li>
-      <li>להשקיע בתשתית התרבותית, הלשונית והדתית הנדרשת לקהילה הינדית משגשגת בישראל, בהתאם למושג התורני של "גר תושב"</li>
-    </ul>
+  <h2 class="display">הוסיפו את קולכם</h2>
+  <p>בחרו כיצד תרצו להשתתף -- חתמו על העצומה לשתי הממשלות, או גלו את הקשר האבותי שלכם לעם ישראל.</p>
+
+  <div class="ta-tabs" role="tablist" aria-label="אפשרויות פעולה">
+    <button class="ta-tab active" role="tab" id="tab-petition" aria-controls="panel-petition" aria-selected="true" type="button">חתמו על העצומה</button>
+    <button class="ta-tab" role="tab" id="tab-dna" aria-controls="panel-dna" aria-selected="false" type="button">בדיקת DNA</button>
   </div>
-  <form class="interest" action="https://formspree.io/f/xwvdwvag" method="POST">
-    <input type="hidden" name="form_type" value="Petition Signature">
-    <label for="pet-name-he">שם מלא</label>
-    <input id="pet-name-he" name="name" type="text" required>
-    <label for="pet-email-he">אימייל</label>
-    <input id="pet-email-he" name="email" type="email" required>
-    <label for="pet-citizenship-he">אני אזרח/ית</label>
-    <select id="pet-citizenship-he" name="citizenship">
-      <option>הודו</option>
-      <option>ישראל</option>
-      <option>אחר</option>
-    </select>
-    <label for="pet-location-he">עיר / מדינה</label>
-    <input id="pet-location-he" name="location" type="text">
-    <label for="pet-comment-he">הערה (רשות)</label>
-    <textarea id="pet-comment-he" name="message"></textarea>
-    <button type="submit">הוסיפו את חתימתי</button>
-    <p class="form-note">בחתימתכם, אתם מצטרפים לקריאה ציבורית להרחבת ערוצי הגירה חוקיים. פרויקט שרי ראם הוא עמותה ללא כוונת רווח; איננו גובים תשלום וטופס זה מגיע רק לצוותנו, לא לכל גורם ממשלתי.</p>
-  </form>
+
+  <div class="ta-panel" id="panel-petition" role="tabpanel" aria-labelledby="tab-petition">
+    <div class="card">
+      <h3>עצומה לממשלות הודו וישראל</h3>
+      <p>אנו, החתומים מטה, אזרחי הודו וישראל, קוראים לממשלותינו:</p>
+      <ul class="link-list">
+        <li>להרחיב ולייעל את ערוצי העבודה והמגורים הדו-צדדיים הקיימים בין הודו לישראל</li>
+        <li>לקבוע יעד משותף לטווח קרוב של קליטת מיליון אזרחים הינדים בישראל דרך ערוצים חוקיים ווולונטריים בלבד</li>
+        <li>להשקיע בתשתית התרבותית, הלשונית והדתית הנדרשת לקהילה הינדית משגשגת בישראל, בהתאם למושג התורני של "גר תושב"</li>
+      </ul>
+    </div>
+    <form class="interest" action="https://formspree.io/f/xwvdwvag" method="POST">
+      <input type="hidden" name="form_type" value="Petition Signature">
+      <label for="pet-name-he">שם מלא</label>
+      <input id="pet-name-he" name="name" type="text" required>
+      <label for="pet-email-he">אימייל</label>
+      <input id="pet-email-he" name="email" type="email" required>
+      <label for="pet-citizenship-he">אני אזרח/ית</label>
+      <select id="pet-citizenship-he" name="citizenship">
+        <option>הודו</option>
+        <option>ישראל</option>
+        <option>אחר</option>
+      </select>
+      <label for="pet-location-he">עיר / מדינה</label>
+      <input id="pet-location-he" name="location" type="text">
+      <label for="pet-comment-he">הערה (רשות)</label>
+      <textarea id="pet-comment-he" name="message"></textarea>
+      <button type="submit">הוסיפו את חתימתי</button>
+      <p class="form-note">בחתימתכם, אתם מצטרפים לקריאה ציבורית להרחבת ערוצי הגירה חוקיים. פרויקט שרי ראם הוא עמותה ללא כוונת רווח; איננו גובים תשלום וטופס זה מגיע רק לצוותנו, לא לכל גורם ממשלתי.</p>
+    </form>
+  </div>
+
+  <div class="ta-panel" id="panel-dna" role="tabpanel" aria-labelledby="tab-dna" hidden>
+    <div class="card">
+      <h3>גלו את שורשי המוצא שלכם</h3>
+      <p>קהילות כמו יהודי קוצ'ין, בני ישראל ובני מנשה נושאות מורשת יהודית חיה השזורה בהיסטוריה של הודו. בדיקת DNA פשוטה לבירור מוצא יכולה לעזור לכם לגלות אם שושלת המשפחה שלכם מתחברת לעם ישראל. ספרו לנו מעט על עצמכם ונשלח לכם כיצד להתחיל.</p>
+    </div>
+    <form class="interest" action="https://formspree.io/f/xwvdwvag" method="POST">
+      <input type="hidden" name="form_type" value="DNA Ancestry Test">
+      <label for="dna-name-he">שם מלא</label>
+      <input id="dna-name-he" name="name" type="text" required>
+      <label for="dna-email-he">אימייל</label>
+      <input id="dna-email-he" name="email" type="email" required>
+      <label for="dna-region-he">אזור מוצא / קהילה בהודו</label>
+      <input id="dna-region-he" name="ancestral_region" type="text">
+      <label for="dna-tradition-he">מסורת משפחתית של מוצא יהודי?</label>
+      <select id="dna-tradition-he" name="jewish_ancestry_tradition">
+        <option>סתם סקרנות</option>
+        <option>ייתכן</option>
+        <option>כן, מסורת משפחתית ידועה</option>
+      </select>
+      <label for="dna-message-he">הודעה (רשות)</label>
+      <textarea id="dna-message-he" name="message"></textarea>
+      <button type="submit">בקשו מידע על בדיקת DNA</button>
+      <p class="form-note">זהו טופס הבעת עניין, לא שירות רפואי או משפטי. פרויקט שרי ראם הוא עמותה ללא כוונת רווח; איננו גובים תשלום וטופס זה מגיע רק לצוותנו.</p>
+    </form>
+  </div>
+
+  <script>
+  (function(){
+    var tabs=document.querySelectorAll('#take-action .ta-tab');
+    tabs.forEach(function(t){
+      t.addEventListener('click',function(){
+        tabs.forEach(function(x){
+          x.classList.remove('active'); x.setAttribute('aria-selected','false');
+          document.getElementById(x.getAttribute('aria-controls')).hidden=true;
+        });
+        t.classList.add('active'); t.setAttribute('aria-selected','true');
+        document.getElementById(t.getAttribute('aria-controls')).hidden=false;
+      });
+    });
+  })();
+  </script>
 </section>
 
 <section class="reveal" data-rv="left" id="interest-he">

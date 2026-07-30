@@ -218,38 +218,88 @@
   </div>
 </section>
 
-<section class="reveal" data-rv="right" id="petition-hir">
+<section class="reveal" data-rv="right" id="take-action">
   <p class="eyebrow">Karyawaahi Karein</p>
-  <h2 class="display">Petition par hastakshar karein</h2>
-  <p>Hum Bharatiya aur Israeli nagrikon se hastakshar ekatrit kar rahe hain, jo dono sarkaron se upar bataye gaye kanooni madhyamon ko tezi se badhaane ka aahvaan karte hain, jiska lakshya Israel mein das lakh Hindu nagrikon ka swagat karna hai. Hamara maanna hai ki isse Israel ki suraksha aur jansankhyaki majbooti badhegi, saath hi saajha mulyon mein nihit mitrata aur gehri hogi -- yeh kadam dono rashtron ke liye labhkari hai.</p>
-  <div class="card">
-    <h3>Bharat aur Israel sarkaron ko petition</h3>
-    <p>Hum, neeche hastaksharkarta Bharat aur Israel ke nagrik, apni sarkaron se aahvaan karte hain ki wo:</p>
-    <ul class="link-list">
-      <li>Bharat aur Israel ke beech maujooda dwipakshiya shram aur nivaas madhyamon ka vistaar aur saraliikaran karein</li>
-      <li>Poorntah kanooni, swaichhik madhyamon se Israel mein das lakh Hindu nagrikon ka swagat karne ka saajha near-term lakshya nirdharit karein</li>
-      <li>Torah ki "Ger Toshav" avdharna ke anuroop, Israel mein ek samriddh Hindu samuday ke liye aavashyak saanskritik, bhaashai, aur dharmik dhaanche mein nivesh karein</li>
-    </ul>
+  <h2 class="display">Apni awaaz jodein</h2>
+  <p>Chunein ki aap kaise bhaag lena chahte hain -- dono sarkaron ko hamari petition par hastakshar karein, ya Israel ke logon se apne vanshaanugat sambandh ko khojein.</p>
+
+  <div class="ta-tabs" role="tablist" aria-label="Karyawaahi vikalp">
+    <button class="ta-tab active" role="tab" id="tab-petition" aria-controls="panel-petition" aria-selected="true" type="button">Petition par hastakshar</button>
+    <button class="ta-tab" role="tab" id="tab-dna" aria-controls="panel-dna" aria-selected="false" type="button">DNA test karein</button>
   </div>
-  <form class="interest" action="https://formspree.io/f/xwvdwvag" method="POST">
-    <input type="hidden" name="form_type" value="Petition Signature">
-    <label for="pet-name-hir">Poora naam</label>
-    <input id="pet-name-hir" name="name" type="text" required>
-    <label for="pet-email-hir">Email</label>
-    <input id="pet-email-hir" name="email" type="email" required>
-    <label for="pet-citizenship-hir">Main nagrik hoon</label>
-    <select id="pet-citizenship-hir" name="citizenship">
-      <option>Bharat</option>
-      <option>Israel</option>
-      <option>Anya</option>
-    </select>
-    <label for="pet-location-hir">Shahar / Desh</label>
-    <input id="pet-location-hir" name="location" type="text">
-    <label for="pet-comment-hir">Tippani (vaikalpik)</label>
-    <textarea id="pet-comment-hir" name="message"></textarea>
-    <button type="submit">Hastakshar karein</button>
-    <p class="form-note">Hastakshar karke, aap vistarit kanooni pravasan madhyamon ke liye ek saarvajanik aahvaan mein apni awaaz jodte hain. Project Shree Ram ek gair-labhkari sangathan hai; hum koi shulk nahin lete aur yeh form keval hamari team ko jaata hai, kisi sarkari agency ko nahin.</p>
-  </form>
+
+  <div class="ta-panel" id="panel-petition" role="tabpanel" aria-labelledby="tab-petition">
+    <div class="card">
+      <h3>Bharat aur Israel sarkaron ko petition</h3>
+      <p>Hum, neeche hastaksharkarta Bharat aur Israel ke nagrik, apni sarkaron se aahvaan karte hain ki wo:</p>
+      <ul class="link-list">
+        <li>Bharat aur Israel ke beech maujooda dwipakshiya shram aur nivaas madhyamon ka vistaar aur saraliikaran karein</li>
+        <li>Poorntah kanooni, swaichhik madhyamon se Israel mein das lakh Hindu nagrikon ka swagat karne ka saajha near-term lakshya nirdharit karein</li>
+        <li>Torah ki "Ger Toshav" avdharna ke anuroop, Israel mein ek samriddh Hindu samuday ke liye aavashyak saanskritik, bhaashai, aur dharmik dhaanche mein nivesh karein</li>
+      </ul>
+    </div>
+    <form class="interest" action="https://formspree.io/f/xwvdwvag" method="POST">
+      <input type="hidden" name="form_type" value="Petition Signature">
+      <label for="pet-name-hir">Poora naam</label>
+      <input id="pet-name-hir" name="name" type="text" required>
+      <label for="pet-email-hir">Email</label>
+      <input id="pet-email-hir" name="email" type="email" required>
+      <label for="pet-citizenship-hir">Main nagrik hoon</label>
+      <select id="pet-citizenship-hir" name="citizenship">
+        <option>Bharat</option>
+        <option>Israel</option>
+        <option>Anya</option>
+      </select>
+      <label for="pet-location-hir">Shahar / Desh</label>
+      <input id="pet-location-hir" name="location" type="text">
+      <label for="pet-comment-hir">Tippani (vaikalpik)</label>
+      <textarea id="pet-comment-hir" name="message"></textarea>
+      <button type="submit">Hastakshar karein</button>
+      <p class="form-note">Hastakshar karke, aap vistarit kanooni pravasan madhyamon ke liye ek saarvajanik aahvaan mein apni awaaz jodte hain. Project Shree Ram ek gair-labhkari sangathan hai; hum koi shulk nahin lete aur yeh form keval hamari team ko jaata hai, kisi sarkari agency ko nahin.</p>
+    </form>
+  </div>
+
+  <div class="ta-panel" id="panel-dna" role="tabpanel" aria-labelledby="tab-dna" hidden>
+    <div class="card">
+      <h3>Apni vanshaanugat jadein khojein</h3>
+      <p>Cochin Yahudi, Bene Israel, aur Bnei Menashe jaise samuday Bharat ke itihaas mein bune ek jeevit Yahudi virasat rakhte hain. Ek saral ancestry DNA test aapko yeh khojne mein madad kar sakta hai ki kya aapki apni vansh-rekha Israel ke logon se judti hai. Apne baare mein thoda bataayein, hum aapko shuruaat karne ka tareeka bhejenge.</p>
+    </div>
+    <form class="interest" action="https://formspree.io/f/xwvdwvag" method="POST">
+      <input type="hidden" name="form_type" value="DNA Ancestry Test">
+      <label for="dna-name-hir">Poora naam</label>
+      <input id="dna-name-hir" name="name" type="text" required>
+      <label for="dna-email-hir">Email</label>
+      <input id="dna-email-hir" name="email" type="email" required>
+      <label for="dna-region-hir">Bharat mein vanshaanugat kshetra / samuday</label>
+      <input id="dna-region-hir" name="ancestral_region" type="text">
+      <label for="dna-tradition-hir">Yahudi vansh ki paarivaarik parampara?</label>
+      <select id="dna-tradition-hir" name="jewish_ancestry_tradition">
+        <option>Sirf jigyasa</option>
+        <option>Sambhavatah</option>
+        <option>Haan, ek gyaat paarivaarik parampara</option>
+      </select>
+      <label for="dna-message-hir">Sandesh (vaikalpik)</label>
+      <textarea id="dna-message-hir" name="message"></textarea>
+      <button type="submit">DNA test jaankaari maangein</button>
+      <p class="form-note">Yeh ek ruchi form hai, koi chikitsa ya kanooni seva nahin. Project Shree Ram ek gair-labhkari sangathan hai; hum koi shulk nahin lete aur yeh form keval hamari team ko jaata hai.</p>
+    </form>
+  </div>
+
+  <script>
+  (function(){
+    var tabs=document.querySelectorAll('#take-action .ta-tab');
+    tabs.forEach(function(t){
+      t.addEventListener('click',function(){
+        tabs.forEach(function(x){
+          x.classList.remove('active'); x.setAttribute('aria-selected','false');
+          document.getElementById(x.getAttribute('aria-controls')).hidden=true;
+        });
+        t.classList.add('active'); t.setAttribute('aria-selected','true');
+        document.getElementById(t.getAttribute('aria-controls')).hidden=false;
+      });
+    });
+  })();
+  </script>
 </section>
 
 <section class="reveal" data-rv="left" id="interest-hir">

@@ -98,38 +98,88 @@
   </div>
 </section>
 
-<section class="reveal" data-rv="right" id="petition">
+<section class="reveal" data-rv="right" id="take-action">
   <p class="eyebrow">Take Action</p>
-  <h2 class="display">Sign the petition</h2>
-  <p>We are collecting signatures from Indian and Israeli citizens calling on both governments to dramatically accelerate the legal pathways above, with a goal of welcoming one million Hindu nationals to Israel. We believe this would strengthen Israel's security and demographic resilience while deepening a friendship rooted in shared values -- a step we see as mutually beneficial for both nations.</p>
-  <div class="card">
-    <h3>Petition to the Governments of India and Israel</h3>
-    <p>We, the undersigned citizens of India and Israel, call on our governments to:</p>
-    <ul class="link-list">
-      <li>Expand and streamline the existing bilateral labor and residency pathways between India and Israel</li>
-      <li>Set a shared near-term goal of welcoming one million Hindu nationals to Israel through fully legal, voluntary channels</li>
-      <li>Invest in the cultural, linguistic, and religious infrastructure needed for a thriving Hindu community in Israel, consistent with the Torah concept of Ger Toshav</li>
-    </ul>
+  <h2 class="display">Add your voice</h2>
+  <p>Choose how you'd like to take part -- sign our petition to both governments, or explore your own ancestral connection to the people of Israel.</p>
+
+  <div class="ta-tabs" role="tablist" aria-label="Take action options">
+    <button class="ta-tab active" role="tab" id="tab-petition" aria-controls="panel-petition" aria-selected="true" type="button">Sign the petition</button>
+    <button class="ta-tab" role="tab" id="tab-dna" aria-controls="panel-dna" aria-selected="false" type="button">Take a DNA test</button>
   </div>
-  <form class="interest" action="https://formspree.io/f/xwvdwvag" method="POST">
-    <input type="hidden" name="form_type" value="Petition Signature">
-    <label for="pet-name">Full name</label>
-    <input id="pet-name" name="name" type="text" required>
-    <label for="pet-email">Email</label>
-    <input id="pet-email" name="email" type="email" required>
-    <label for="pet-citizenship">I am a citizen of</label>
-    <select id="pet-citizenship" name="citizenship">
-      <option>India</option>
-      <option>Israel</option>
-      <option>Other</option>
-    </select>
-    <label for="pet-location">City / Country</label>
-    <input id="pet-location" name="location" type="text">
-    <label for="pet-comment">Comment (optional)</label>
-    <textarea id="pet-comment" name="message"></textarea>
-    <button type="submit">Add My Signature</button>
-    <p class="form-note">By signing, you add your voice to a public call for expanded legal migration pathways. Project Shree Ram is a nonprofit -- we charge no fees, and this form goes only to our team, not to any government agency.</p>
-  </form>
+
+  <div class="ta-panel" id="panel-petition" role="tabpanel" aria-labelledby="tab-petition">
+    <div class="card">
+      <h3>Petition to the Governments of India and Israel</h3>
+      <p>We, the undersigned citizens of India and Israel, call on our governments to:</p>
+      <ul class="link-list">
+        <li>Expand and streamline the existing bilateral labor and residency pathways between India and Israel</li>
+        <li>Set a shared near-term goal of welcoming one million Hindu nationals to Israel through fully legal, voluntary channels</li>
+        <li>Invest in the cultural, linguistic, and religious infrastructure needed for a thriving Hindu community in Israel, consistent with the Torah concept of Ger Toshav</li>
+      </ul>
+    </div>
+    <form class="interest" action="https://formspree.io/f/xwvdwvag" method="POST">
+      <input type="hidden" name="form_type" value="Petition Signature">
+      <label for="pet-name">Full name</label>
+      <input id="pet-name" name="name" type="text" required>
+      <label for="pet-email">Email</label>
+      <input id="pet-email" name="email" type="email" required>
+      <label for="pet-citizenship">I am a citizen of</label>
+      <select id="pet-citizenship" name="citizenship">
+        <option>India</option>
+        <option>Israel</option>
+        <option>Other</option>
+      </select>
+      <label for="pet-location">City / Country</label>
+      <input id="pet-location" name="location" type="text">
+      <label for="pet-comment">Comment (optional)</label>
+      <textarea id="pet-comment" name="message"></textarea>
+      <button type="submit">Add My Signature</button>
+      <p class="form-note">By signing, you add your voice to a public call for expanded legal migration pathways. Project Shree Ram is a nonprofit -- we charge no fees, and this form goes only to our team, not to any government agency.</p>
+    </form>
+  </div>
+
+  <div class="ta-panel" id="panel-dna" role="tabpanel" aria-labelledby="tab-dna" hidden>
+    <div class="card">
+      <h3>Discover your ancestral roots</h3>
+      <p>Communities such as the Cochin Jews, the Bene Israel, and the Bnei Menashe carry a living Jewish heritage woven into India's history. A simple ancestry DNA test can help you explore whether your own family line connects to the people of Israel. Tell us a little about yourself and we'll share how to get started.</p>
+    </div>
+    <form class="interest" action="https://formspree.io/f/xwvdwvag" method="POST">
+      <input type="hidden" name="form_type" value="DNA Ancestry Test">
+      <label for="dna-name">Full name</label>
+      <input id="dna-name" name="name" type="text" required>
+      <label for="dna-email">Email</label>
+      <input id="dna-email" name="email" type="email" required>
+      <label for="dna-region">Ancestral region / community in India</label>
+      <input id="dna-region" name="ancestral_region" type="text">
+      <label for="dna-tradition">Family tradition of Jewish ancestry?</label>
+      <select id="dna-tradition" name="jewish_ancestry_tradition">
+        <option>Just curious</option>
+        <option>Possibly</option>
+        <option>Yes, a known family tradition</option>
+      </select>
+      <label for="dna-message">Message (optional)</label>
+      <textarea id="dna-message" name="message"></textarea>
+      <button type="submit">Request DNA Test Info</button>
+      <p class="form-note">This is an interest form, not a medical or legal service. Project Shree Ram is a nonprofit -- we charge no fees, and this form goes only to our team.</p>
+    </form>
+  </div>
+
+  <script>
+  (function(){
+    var tabs=document.querySelectorAll('#take-action .ta-tab');
+    tabs.forEach(function(t){
+      t.addEventListener('click',function(){
+        tabs.forEach(function(x){
+          x.classList.remove('active'); x.setAttribute('aria-selected','false');
+          document.getElementById(x.getAttribute('aria-controls')).hidden=true;
+        });
+        t.classList.add('active'); t.setAttribute('aria-selected','true');
+        document.getElementById(t.getAttribute('aria-controls')).hidden=false;
+      });
+    });
+  })();
+  </script>
 </section>
 
 <section class="reveal" data-rv="left" id="interest">
