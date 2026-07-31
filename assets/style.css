@@ -131,6 +131,12 @@ section:nth-of-type(even){background:var(--cream-2);}
 .quote-feature .qphoto{width:100%; max-width:560px; margin:0 auto 1rem; border-radius:8px; border:1px solid var(--line); box-shadow:0 10px 26px rgba(21,38,87,.16);}
 .quote-feature .qvideo{width:100%; max-width:640px; margin:0 auto 1rem; aspect-ratio:16/9; border-radius:8px; overflow:hidden; border:1px solid var(--line); box-shadow:0 10px 26px rgba(21,38,87,.16);}
 .quote-feature .qvideo iframe{width:100%; height:100%; border:0; display:block;}
+.quote-feature .qmedia{display:grid; grid-template-columns:1fr 1fr; gap:1.2rem; max-width:900px; margin:0 auto 1rem; align-items:start;}
+.quote-feature .qmedia figure{margin:0;}
+.quote-feature .qmedia .qvideo{max-width:none; width:100%; margin:0 0 .5rem;}
+.quote-feature .qmedia .qphoto{max-width:none; width:100%; aspect-ratio:16/9; object-fit:cover; height:auto; margin:0 0 .5rem;}
+.quote-feature .qmedia .qcaption,.quote-feature .qmedia .qcredit{margin:0;}
+@media(max-width:640px){.quote-feature .qmedia{grid-template-columns:1fr; gap:1.4rem;}}
 .quote-feature .qcaption{max-width:640px; margin:0 auto 1.2rem; font-size:.9rem; line-height:1.6; color:var(--muted);}
 .quote-feature .qcaption strong{color:var(--ink); font-weight:600;}
 .qcredit{font-size:.76rem; color:var(--muted); margin:0 0 1rem;}
