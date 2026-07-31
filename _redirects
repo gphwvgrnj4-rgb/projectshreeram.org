@@ -1,2 +1,4 @@
 # strip .html for clean canonical URLs
 /*.html   /:splat   301!
+# old Hindi URLs now live at root
+/hi/*  /:splat  301!
